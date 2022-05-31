@@ -20,8 +20,9 @@ struct ContentView: View {
             
             VStack(spacing: 0) {
                 Spacer()
-//                DayGraphView(goalCaffeine: goalCaffeine)
-//                    .padding(.bottom, 50)
+                DayGraphView(goalCaffeine: goalCaffeine)
+                    .padding(.bottom, 50)
+                
                 
                 List {
                     ForEach(drinks) { drink in
