@@ -6,6 +6,8 @@ struct ContentView: View {
     @State private var showingSettingSheet = false
     @State private var testSheet = false
     
+    var a: Int
+    
     // MARK: データの取得処理
     @Environment(\.managedObjectContext) private var context
     @FetchRequest(
@@ -20,8 +22,10 @@ struct ContentView: View {
             
             VStack(spacing: 0) {
                 Spacer()
-                DayGraphView(goalCaffeine: goalCaffeine)
-                    .padding(.bottom, 50)
+                // ここバグ
+                // DayGraphViewに問題アリ
+//                DayGraphView(goalCaffeine: goalCaffeine)
+//                    .padding(.bottom, 50)
                 
                 
                 List {
